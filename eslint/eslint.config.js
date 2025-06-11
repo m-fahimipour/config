@@ -11,8 +11,9 @@ export default tslint.config(
       "**/*.test.ts",
       "**/*.test.js",
       "*.config.[jt]s",
-      "src/**/*.d.ts",
+      "**/*.d.ts",
       "dist",
+      "node_modules",
     ],
   },
   {
@@ -215,7 +216,7 @@ export default tslint.config(
               next: ["^next$", "^next[-/].+", ".+-next$"],
               mui: ["^@mui/.+"],
               hook: ["^~/.*(/hooks?|/use[A-Z]).*"],
-              pic: [".+\.(svg|jpg|webp|jpeg|png)"],
+              pic: [".+.(svg|jpg|webp|jpeg|png)"],
             },
           },
         },
@@ -245,5 +246,5 @@ export default tslint.config(
         },
       ],
     },
-  },
+  }
 );
